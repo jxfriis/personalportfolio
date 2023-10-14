@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: "Gabarito"
+  font-family: "Gabarito";
 }
 
 #navbar{
@@ -12,6 +12,7 @@
   padding-bottom: 10px;
   top: 0;
 }
+
 
 #navbar ul{
   list-style: none;
@@ -37,7 +38,7 @@
   text-decoration: none
 }
 
-#welcome-section{
+.welcome-section{
   justify-content: center;
   text-align: center;
   width: 100%;
@@ -46,14 +47,27 @@
   padding-top: 25vh;
 }
 
-#welcome-section h1{
+.welcome-section, .about-page{
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #FF4B91;
+  padding-top: 25vh;
+}
+
+.welcome-section h1{
   color: #0802A3;
   font-size: 50px;
   font-weight: 900;
   padding-top: 25vh;
 }
 
-#welcome-section h2{
+#about-text{
+  padding-top: 0px;
+}
+
+.welcome-section h2{
   display: block;
   font-weight: 600;
 }
@@ -91,7 +105,7 @@
   margin: 10% 20%;
 }
 
-img{
+#projects img{
   object-fit: cover;
   aspect-ratio: 1/1;
   width: 230px;
@@ -148,7 +162,27 @@ img{
   transition: ease-in-out .3s;
 }
 
-@media only screen and (max-width: 320px){
+#about-desc{
+  display: flex;
+  justify-content: center;
+}
+
+#about-desc p{
+  width: 40%;
+  text-align: center;
+  font-weight: 400;
+  line-height: 2;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+#about-pfp img{
+  object-fit: cover;
+  width: 50%;
+  border-radius: 400px;;
+}
+
+@media (max-width: 320px){
   }
     #navbar ul{
     justify-content: center;
@@ -160,7 +194,7 @@ img{
     text-align: center;
 }
 
-@media only screen and (min-width:769px){
+@media (min-width:769px){
 }
 #navbar{
 display: flex;
@@ -171,3 +205,4 @@ flex-wrap: wrap;
 #project-header{
 text-align: center;
 }
+
